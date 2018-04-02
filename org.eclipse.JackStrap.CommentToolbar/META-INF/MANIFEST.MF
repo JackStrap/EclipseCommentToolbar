@@ -1,0 +1,7 @@
+Automatic-Module-Name: org.eclipse.JackStrap.CommentToolbar
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Comment Toolbar
+Bundle-SymbolicName: org.eclipse.JackStrap.CommentToolbar;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: Jack.Strap

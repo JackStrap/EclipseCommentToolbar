@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<!-- 
+		?laston
+		?after=additions
+		?after=org.eclipse.ui.workbench.help
+		org.eclipse.wst.html.core.htmlsource.source
+	-->
+   <extension point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="org.eclipse.JackStrap.CommentToolbar"
+               label="Comment Toolbar">
+			<command
+				commandId="org.eclipse.wst.sse.ui.toggle.comment"
+				icon="icons/commentEdit.png"
+				style="push"
+				label="Toggle Comment"
+				tooltip="Toggle Comment"
+				id="org.eclipse.JackStrap.CommentToolbar.html.Toggle">
+				<visibleWhen
+					checkEnabled="true">
+				</visibleWhen>
+			</command>
+			<command
+		         commandId="org.eclipse.wst.sse.ui.add.block.comment"
+		         icon="icons/commentAdd.png"
+		         style="push"
+		         label="Add Block Comment"
+		         tooltip="Add Block Comment"
+		         id="org.eclipse.JackStrap.CommentToolbar.html.AddBlock">
+				
+				<visibleWhen checkEnabled="true" />
+			</command>
+			<command
+				commandId="org.eclipse.wst.sse.ui.remove.block.comment"
+				icon="icons/commentDel.png"
+				style="push"
+				label="Remove Block Comment"
+				tooltip="Remove Block Comment"
+				id="org.eclipse.JackStrap.CommentToolbar.html.RemoveBlock">
+				<visibleWhen
+					checkEnabled="true">
+				</visibleWhen>
+			</command>
+			
+			<separator
+				name="separator.java"
+				visible="true">
+			</separator>
+			
+			<command
+				commandId="org.eclipse.jdt.ui.edit.text.java.toggle.comment"
+				icon="icons/commentEdit.png"
+				style="push"
+				label="Toggle Comment"
+				tooltip="Toggle Comment"
+				id="org.eclipse.JackStrap.CommentToolbar.java.Toggle">
+				<visibleWhen
+					checkEnabled="true">
+				</visibleWhen>
+			</command>
+			<command
+				commandId="org.eclipse.jdt.ui.edit.text.java.add.block.comment"
+				icon="icons/commentAdd.png"
+				style="push"
+				label="Add Block Comment"
+				tooltip="Add Block Comment"
+				id="org.eclipse.JackStrap.CommentToolbar.java.AddBlock">
+				<visibleWhen
+					checkEnabled="true">
+					<!-- <with
+						variable="activeEditorId">
+						<equals
+							value="org.eclipse.jdt.ui.CompilationUnitEditor">
+						</equals>
+					</with> -->
+					<with
+						variable="activePartId">
+						<equals
+							value="org.eclipse.jdt.ui.CompilationUnitEditor">
+						</equals>
+					</with>
+				 </visibleWhen>
+			</command>
+			<command
+				commandId="org.eclipse.jdt.ui.edit.text.java.remove.block.comment"
+				icon="icons/commentDel.png"
+				style="push"
+				label="Remove Block Comment"
+				tooltip="Remove Block Comment"
+				id="org.eclipse.JackStrap.CommentToolbar.java.RemoveBlock">
+				<visibleWhen
+					checkEnabled="true">
+				</visibleWhen>
+			</command>
+			
+			<separator
+				name="separator.js"
+				visible="true">
+			</separator>
+			
+			<command
+				commandId="org.eclipse.wst.jsdt.ui.edit.text.java.toggle.comment"
+				icon="icons/commentEdit.png"
+				style="push"
+				label="Toggle Comment"
+				tooltip="Toggle Comment"
+				id="org.eclipse.JackStrap.CommentToolbar.js.Toggle">
+				<visibleWhen
+					checkEnabled="true">
+				</visibleWhen>
+			</command>
+			<command
+				commandId="org.eclipse.wst.jsdt.ui.edit.text.java.add.block.comment"
+				icon="icons/commentAdd.png"
+				style="push"
+				label="Add Block Comment"
+				tooltip="Add Block Comment"
+				id="org.eclipse.JackStrap.CommentToolbar.js.AddBlock">
+				<visibleWhen
+					checkEnabled="true">
+					<with
+						variable="activePartId">
+						<equals
+							value="org.eclipse.wst.jsdt.ui.CompilationUnitEditor">
+						</equals>
+					</with>
+				</visibleWhen>
+			</command>
+			<command
+				commandId="org.eclipse.wst.jsdt.ui.edit.text.java.remove.block.comment"
+				icon="icons/commentDel.png"
+				style="push"
+				label="Remove Block Comment"
+				tooltip="Remove Block Comment"
+				id="org.eclipse.JackStrap.CommentToolbar.js.RemoveBlock">
+				<visibleWhen
+					checkEnabled="true">
+				</visibleWhen>
+			</command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>

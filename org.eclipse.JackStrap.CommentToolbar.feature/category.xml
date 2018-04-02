@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.JackStrap.CommentToolbar.feature_1.0.0.qualifier.jar" id="org.eclipse.JackStrap.CommentToolbar.feature" version="1.0.0.qualifier">
+      <category name="org.eclipse.JackStrap.CommentToolbar.category"/>
+   </feature>
+   <category-def name="org.eclipse.JackStrap.CommentToolbar.category" label="Comment Toolbar"/>
+</site>
